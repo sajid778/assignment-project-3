@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,12 @@
     <!-- google font link -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script>
         tailwind.config = {
@@ -35,71 +38,88 @@
         }
     </script>
 </head>
+
 <body class="font-manrope">
 
-    <header>
+    <header class="w-11/12 md:w-4/5 mx-auto">
         <!-- navbar -->
 
         <nav class="my-5">
-        <div class="navbar bg-base-100 container mx-auto">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+            <div class="navbar bg-base-100 container mx-auto">
+                <div class="navbar-start">
+
+
+
+                    <button class="w-10 h-10 bg-[#ABEF5F] rounded-full ">
+                        <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                    </button>
+                    <a href="#" class="ml-3 text-3xl font-black">Rinterio</a>
+
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-                </ul>
-              </div>
-              
-        
-                <button class="w-10 h-10 bg-[#ABEF5F] rounded-full ">
-                    <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
-                  </button>
-              <a href="#" class="ml-3 text-3xl font-black">Rinterio</a>
-           
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 ">
+                        <li><a class="hover:font-bold hover:bg-transparent">Home</a></li>
+                        <li><a class="hover:font-bold hover:bg-transparent">Services</a></li>
+                        <li><a class="hover:font-bold hover:bg-transparent">Portfolio</a></li>
+                        <li><a class="hover:font-bold hover:bg-transparent">Blogs</a></li>
+                        <li><a class="hover:font-bold hover:bg-transparent">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="hidden lg:flex navbar-end space-x-2">
+                    <button class="w-10 h-10 bg-white rounded-full border">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="w-10 h-10 bg-white border rounded-full">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <a class="btn bg-[#ABEF5F] rounded-full h-14 font-black text-xl border-none">Book Consult <button
+                            class="w-10 h-10 bg-black text-white rounded-full">
+                            <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                        </button></a>
+                </div>
+
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost end-0 lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 ">
-                  <li><a class="hover:font-bold hover:bg-transparent">Home</a></li>
-                  <li><a class="hover:font-bold hover:bg-transparent">Services</a></li>
-                <li><a class="hover:font-bold hover:bg-transparent">Portfolio</a></li>
-                <li><a class="hover:font-bold hover:bg-transparent">Blogs</a></li>
-                <li><a class="hover:font-bold hover:bg-transparent">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end gap-5">
-                <button class="w-10 h-10 bg-white rounded-full border">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                  <button class="w-10 h-10 bg-white border rounded-full">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </button>
-              <a class="btn bg-[#ABEF5F] rounded-full h-14 font-black text-xl border-none">Book Consult   <button class="w-10 h-10 bg-black text-white rounded-full">
-                <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
-              </button></a>
-            </div>
-          </div>
 
         </nav>
+
+
+        <!-- banner section -->
+
+        <section class="mb-10">
+            <img class="mx-auto" src="assets/banner.png" alt="">
+                    <div class="space-y-5 md:space-y-10 text-center">
+                        <h1 class="text-4xl md:text-6xl font-black lg:w-8/12 mx-auto">A barn house of this design has a striking appearance</h1>
+                        <p class="lg:w-7/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                        <a class="btn bg-[#ABEF5F80] border-emerald-500 border-2 rounded-full h-14 font-black text-xl border-none">View Details<button
+                            class="w-10 h-10 bg-[#ABEF5F] text-black rounded-full">
+                            <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                        </button></a>
+            
+                    </div>
+            
+                   </section>
+
+     
     </header>
-    
+
 </body>
+
 </html>
