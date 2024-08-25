@@ -41,7 +41,7 @@
 
 <body class="font-manrope">
 
-    <header class="mx-auto">
+    <header class="mx-auto w-11/12 md:4/5 ">
         <!-- navbar -->
 
         <nav class="w-11/12 md:w-4/5 mx-auto ">
@@ -105,7 +105,7 @@
                     current space, or seeking innovative interior design solutions, our team of experts is here to guide
                     you every step of the way. </p>
                 <a
-                    class="btn bg-[#ABEF5F80] border-emerald-500 border-2 rounded-full h-14 font-black text-xl border-none">View
+                    class="btn bg-[#ABEF5F80] border-emerald-500 border-2 w-full lg:w-auto rounded-full h-14 font-black text-xl border-none">View
                     Details<button class="w-10 h-10 bg-[#ABEF5F] text-black rounded-full">
                         <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
                     </button></a>
@@ -122,16 +122,16 @@
 
         <section class="w-11/12 md:w-4/5 mx-auto relative">
 
-            <div class="hidden lg:block absolute top-7 left-6"> <img src="assets/Vector.png" alt=""></div>
+            <div class="hidden lg:block absolute -top-7 left-6"> <img src="assets/Vector.png" alt=""></div>
 
             <div class=" flex flex-col lg:flex-row my-24 items-center justify-between">
 
                 <!-- context -->
 
-                <div class="p-0 lg:p-24 w-full lg:w-1/2 space-y-10 lg:text-start  text-center mb-5">
+                <div class="p-0 lg:p-10 w-full lg:w-1/2 space-y-10 lg:text-start  text-center mb-5">
                     <a href="#"
                         class=" bg-white rounded-full h-14 font-black text-xl border-none py-3 px-5 lg:px-10 lg:py-5">
-                        <i class="fa-solid fa-arrow-right-long mr-3"></i> About US</a>
+                        <i class="fa-solid fa-arrow-right-long mr-3"></i> About Us</a>
 
                     <h1 class="text-3xl lg:text-4xl font-bold ">We design thoughtful, <br> liveable spaces</h1>
                     <p>With years of experience and a passion for perfection, we take pride in delivering homes that
@@ -236,7 +236,9 @@
 
         <!-- Latest portfolio section-->
 
-        <section class="w-11/12 md:w-4/5 mx-auto relative mb-24">
+        <section class="w-full bg-white relative">
+
+            <div class="w-11/12 md:w-4/5 mx-auto py-10">
 
 
             <div class=" flex flex-col lg:flex-row items-center justify-between ">
@@ -245,7 +247,7 @@
 
                 <div class="w-full space-y-10 text-center mb-10">
                     <a href="#" class=" bg-[#ABEF5F33] rounded-full h-14 font-black text-lg border-none py-3 px-5 ">
-                        <i class="fa-solid fa-arrow-right-long mr-3"></i> Let's Connect</a>
+                        <i class="fa-solid fa-arrow-right-long mr-3"></i> Explore our Latest work </a>
 
                     <h1 class="text-3xl lg:text-4xl font-black ">Our Latest Portfolio</h1>
                     <p class="w-full lg:w-6/12 mx-auto">Our team is a blend of talented architects, designers, and
@@ -333,13 +335,15 @@
             </div>
             </div>
 
+            </div>
+
         </section>
 
 
 
         <!-- let's connect section -->
 
-        <section class=" mx-auto relative mb-10  lg:p-24 bg-[url('/assets/bg.jpg')] bg-no-repeat bg-center bg-cover">
+        <section class=" mx-auto relative mb-10  lg:p-24 bg-[url('/assets/bg.jpg')] bg-no-repeat bg-center bg-cover blue-red-500 ">
 
 
             <div class=" flex flex-col lg:flex-row items-center justify-between">
@@ -382,25 +386,28 @@
 
         <section class="w-11/12 lg:4/5 space-y-10 text-center my-24 mx-auto">
 
-            <h1 class="text-5xl font-bold text-center mt-3">Frequently Asked <span class="text-red-500">Questions</span>
-            </h1>
+        
 
+            <h1 class="text-5xl font-bold text-center mt-3">Frequently Asked Questions</h1>
+            <p>Have questions? Here you will fond the answer most valued by our team member,along with access to step by step instructions and support</p>
+    
 
             <div class="hero bg-orange-100 rounded-3xl py-5 w-11/12 lg:4/5 mx-auto">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="assets/faq.jpg" class="w-md rounded-lg shadow-2xl" />
+                    <img class="lg:rounded-tr-[300px]" src="assets/faq.jpg" class="w-md rounded-lg shadow-2xl" />
 
                     <!-- accordion -->
 
                     <div>
-                        <div class="collapse collapse-arrow border border-red-200">
+                        <h1 class="text-5xl font-bold text-center mt-3 text-red-500 mb-10">FAQ</h1>
+                        <div class="collapse collapse-arrow border border-red-200 bg-slate-100">
                             <input type="radio" name="my-accordion-2" checked="checked" />
                             <div class="collapse-title text-xl font-medium"> How much does it cost to build a house?</div>
                             <div class="collapse-content">
-                                <p>Yes, we take care of all the necessary permits and inspections required for the construction of your home. We ensure that everything complies with local building codes and regulations.</p>
+                                <p>The cost of building a house depends on various factors such as location, size, materials used, and design complexity. On average, the cost ranges from $150 to $300 per square foot. We provide a detailed estimate after the initial consultation and design phase.</p>
                             </div>
                         </div>
-                        <div class="collapse collapse-arrow border border-red-200">
+                        <div class="collapse collapse-arrow border border-red-200 bg-slate-100">
                             <input type="radio" name="my-accordion-2" checked="checked" />
                             <div class="collapse-title text-xl font-medium">Can I make changes to the design during construction?
                             </div>
@@ -408,7 +415,7 @@
                                 <p>While it’s possible to make changes during construction, it can lead to delays and additional costs. We recommend finalizing the design before construction begins to avoid any issues. However, our team will work with you to accommodate changes as much as possible.</p>
                             </div>
                         </div>
-                        <div class="collapse collapse-arrow border border-red-200">
+                        <div class="collapse collapse-arrow border border-red-200 bg-slate-100">
                             <input type="radio" name="my-accordion-2" />
                             <div class="collapse-title text-xl font-medium">Do you offer warranties on your work?
                             </div>
@@ -417,7 +424,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse collapse-arrow border border-red-200">
+                        <div class="collapse collapse-arrow border border-red-200 bg-slate-100">
                             <input type="radio" name="my-accordion-2" />
                             <div class="collapse-title text-xl font-medium">Do you handle all the necessary permits and inspections?</div>
                             <div class="collapse-content">
@@ -427,7 +434,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse collapse-arrow border border-red-200">
+                        <div class="collapse collapse-arrow border border-red-200 bg-slate-100">
                             <input type="radio" name="my-accordion-2" />
                             <div class="collapse-title text-xl font-medium">Do you offer custom home designs?
                             </div>
@@ -445,61 +452,6 @@
             </div>
 
         </section>
-
-<!-- 
-        <section class="w-11/12 lg:4/5 space-y-10 text-center py-5 mx-auto">
-            <h1 class="text-5xl font-bold text-center">Frequently Asked <span class="text-red-500">Questions</span>
-            </h1>
-
-            <div class="hero">
-                <div class="w-full hero-content flex flex-col lg:flex-row items-center bg-stone-100 justify-between">
-                    <img src="assets/faq.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-
-
-                    <div>
-                        <div class="collapse collapse-arrow border border-red-300">
-                            <input type="radio" name="my-accordion-2" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
-                            </div>
-                            <div class="collapse-content">
-                                <p>hello</p>
-                            </div>
-                        </div>
-                        <div class="collapse collapse-arrow border border-red-300">
-                            <input type="radio" name="my-accordion-2" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
-                            </div>
-                            <div class="collapse-content">
-                                <p>hello</p>
-                            </div>
-                        </div>
-                        <div class="collapse collapse-arrow border border-red-300">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
-                            </div>
-                            <div class="collapse-content">
-                                <p>hello</p>
-                            </div>
-                        </div>
-                        <div class="collapse collapse-arrow border border-red-300">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
-                            </div>
-                            <div class="collapse-content">
-                                <p>hello</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-                
-
-
-
-        </section> -->
-
     </main>
 
 
